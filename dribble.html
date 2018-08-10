@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Customize CSS -->
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+        <title>Dribbble!</title>
+    </head>
+    <body>
+
+        <!-- Top navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler py-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <a class="navbar-brand " href="#">Dribbble</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active dropdown">
+                        <a style="::after {
+                                  display:none;" class="nav-link arrow dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">shots <span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-muted" href="#">Popular Shots</a>
+                            <a class="dropdown-item text-muted" href="#">Recent Shots</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-muted" href="#">Debuts</a>
+                            <a class="dropdown-item text-muted" href="#">Playoffs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designers</a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-muted" href="#">Trending Shots</a>
+                            <a class="dropdown-item text-muted" href="#">Popular Designers</a>  
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams </a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-muted" href="#">Trending Teams</a>
+                            <a class="dropdown-item text-muted" href="#">Popular Teams</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-muted" href="#">Add Your Design Teams</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community </a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-muted" href="#">Blogs</a>
+                            <a class="dropdown-item text-muted" href="#">Podcast</a>
+                            <a class="dropdown-item text-muted" href="#">Meetups</a>
+                            <a class="dropdown-item text-muted" href="#">Hang Time Los Angeles</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-muted" href="#">Host a Meetup</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jobs </a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-muted" href="#">All</a>
+                            <a class="dropdown-item text-muted" href="#">Remote</a>
+                            <a class="dropdown-item text-muted" href="#">Team Hiring</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-muted" href="#">Post a Job</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hiring</a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-muted" href="#">Hiring at Dribble</a>
+                            <a class="dropdown-item text-muted" href="#">Add your Design Team</a>  
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-muted" href="#">About Dribble</a>
+                            <a class="dropdown-item text-muted" href="#">Dribble Store</a>
+                            <a class="dropdown-item text-muted" href="#">Help</a>
+                            <a class="dropdown-item text-muted" href="#">Careers</a>
+                            <a class="dropdown-item text-muted" href="#">Guidelines</a>
+                            <a class="dropdown-item text-muted" href="#">Brand</a>
+                            <a class="dropdown-item text-muted" href="#">Integartions</a>
+                            <a class="dropdown-item text-muted" href="#">API</a>
+                            <a class="dropdown-item text-muted" href="#">Advertise</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-muted" href="#">Goods by Designers</a>
+                            <a class="dropdown-item text-muted" href="#">Colors</a>
+                            <a class="dropdown-item text-muted" href="#">Goods by Locations</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-muted" href="#">IOS App</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="form-inline mr-auto mt-2 mt-lg-0 justify-content-end">
+                    <a class="nav-link sign-in " href="#">Sign In</a>
+                    <a class="nav-link " href="#">Sign Out</a>
+                    <input class="form-control mr-sm-2" type="search" placeholder="  Search" aria-label="Search">
+                </form>
+            </div>
+        </nav>
+
+        <!-- Jomborton Code -->
+
+        <div class="jumbotron">
+            <p class="text-white">What are you working on?<span class="text-muted"> Dribbble is where designers get inspired and hired.</span></p>
+            <a class="btn btn-danger" href="#" role="button">Continue -></a>
+        </div>
+
+        <!-- Second navigation bar code -->
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark main-nav">
+            <div class="container justify-content-center">
+                <ul class="nav navbar-nav flex-fill w-100 flex-nowrap">
+                </ul>
+                <ul class="nav navbar-nav flex-fill w-100 flex-nowrap justify-content-center">
+                    <li class="nav-item"><span class="navbar-text">
+                        Looking to Hire a Designer?
+                        </span>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><u class="text-white" style="text-align: center">Learn More</u></a></li>
+                </ul>
+                <ul class="nav navbar-nav flex-fill w-100 justify-content-end">
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Third navigation bar code -->
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light main-nav">
+            <div class="container justify-content-center">
+                <ul class="nav navbar-nav flex-fill w-100 flex-nowrap">
+
+                </ul>
+
+                <ul class="nav navbar-nav flex-fill w-100 flex-nowrap justify-content-center">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Popular</a>
+                        <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Recent</a>
+                            <a class="dropdown-item" href="#">Most Viewed</a>  
+                            <a class="dropdown-item" href="#">Most COmmented</a> 
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shots</a>
+                        <div class="dropdown-menu text-muted" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Debuts</a>
+                            <a class="dropdown-item" href="#">Team Shots</a> 
+                            <a class="dropdown-item" href="#">Playoffs</a>  
+                            <a class="dropdown-item" href="#">Rebounds</a>  
+                            <a class="dropdown-item" href="#">Animated GIFs</a>  
+                            <a class="dropdown-item" href="#">Shots With Attachments</a>  
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Now</a>
+                        <div class="dropdown-menu text-muted" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">This Past Week</a>
+                            <a class="dropdown-item" href="#">Ahis Past Month</a>  
+                            <a class="dropdown-item" href="#">his Past Year</a> 
+                            <a class="dropdown-item" href="#">Alltime</a>  
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav flex-fill w-100 flex-nowrap justify-content-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i style="font-size:20px; padding: 0px;" class="fab fa-microsoft"></i> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                            <p><a class="dropdown-item text-muted" href="#">Remote</a>
+                                <a class="dropdown-item text-muted" href="#">Team Hiring</a></p>
+                        </div>   
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+
+
+        <!-- Cards code -->
+
+
+
+        <div class="card-columns mt-3">
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+            <div class="card">
+                <div class="icontainer">    
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+
+
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6>
+            <div class="card">
+                <div class="icontainer">
+                    <div class="card-bodydiv card-body">
+                        <img class="card-img-top" src="7.jpg" alt="Card image cap">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div></div>
+                <div class="card-footer">
+                    <small class="text-muted right"><i class="fas fa-eye"></i>123&nbsp;  <i class="fas fa-comment"></i>21&nbsp;  <i class="fas fa-heart"></i>55</small>
+                </div>
+            </div>
+            <h6 style="margin-left: 5px;">MUTI &nbsp;<span class="badgehidden"><sapn class="badge">Team</sapn> </span></h6><br><br>
+
+            
+        </div>  <br>
+
+
+        <div style="padding: 10px;" class="container">
+            <center>
+                <button style="width: 400px; height: 60px;" class="btn btn-danger">Sign Up to Continue</button><br><br>
+                <a href="#">or sign in</a>
+            </center>
+        </div>  
+        
+        <!-- Footer -->
+        
+        <footer class="site-footer">
+            <div style="text-align: left; padding: 0px;" class="container ">
+                <div style="margin-left: 2px;" class="row-fluid">
+                    <div style="text-align: left;" class="col-lg-3">
+                        <ul class="footer-li">
+                            <li><h3><a href="#">dribbble</a></h3></li>
+                            <li><b><a href="#">Show and tell for designers</a></b></li><br>
+                            <li><p>What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects.</p></li><br>
+                            <li><a href="#"><i style="font-size: 20px" class="far fa-basketball-ball"></i></a>
+                                <a href="#"><i style="font-size: 20px" class="fab fa-twitter"></i></a>
+                                <a href="#"><i style="font-size: 20px" class="fab fa-facebook"></i></a>
+                                <a href="#"><i style="font-size: 20px"s class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1">
+                        <ul class="footer-li">
+                            <li><a href="#"><h4><b>dribbble</b></h4></a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Guidelines</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1">
+                        <ul class="footer-li">
+                            <li><h4></h4></li><br>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">iOS App</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <ul class="footer-li">
+                            <li><b><a href="#">Hiring at Dribbble</a></b></li>
+                            <li><a href="#">Post a Job</a></li>
+                            <li><a href="#">Search Designers</a></li>
+                            <li><a href="#">Add Your Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3"  >
+                        <ul class="footer-li">
+                            <li><h5><b><a href="#">Jobs For Designers</a></b></h5></li>
+                            <li><div class="media">
+                                <span class="media-left">
+                                    <img width="40px" height="40px" src="7.jpg" alt="...">
+                                </span>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading"><b>Monomyth Studios </b><p>Front-End Developer</p></a>
+
+                                </div>
+                                </div>
+                            </li>
+                            <li><div class="media">
+                                <span class="media-left">
+                                    <img width="40px" height="40px" src="7.jpg" alt="...">
+                                </span>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading"><b>Anfinity</b><p>jr Product Designer</p></a>
+
+                                </div>
+                                </div>
+                            </li>
+                            <li><div class="media">
+                                <span class="media-left">
+                                    <img width="40px" height="40px" src="7.jpg" alt="...">
+                                </span>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading"><b>Pheonix Design</b><p>Junior Developer</p></a>
+
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="" class="col-lg-2">
+                        <ul class="footer-li">
+                            <li><div class="media">
+                                <span class="media-left">
+                                    <img width="40px" height="40px" src="7.jpg" alt="...">
+                                </span>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading"><b>Anfinity</b><p>jr Product Designer</p></a>
+
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
